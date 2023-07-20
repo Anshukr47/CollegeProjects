@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extract Unique Characters</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Extract Unique Characters</h1>
+    <label for="inputString">Enter a string:</label>
+    <input type="text" id="inputString">
+    <button onclick="extractUniqueCharacters()">Extract Unique Characters</button>
+    <p id="result"></p>
+
+    <script>
+        
+        function extractUniqueCharacters() {
+            const inputString = document.getElementById("inputString").value;
+            const uniqueCharacters = [...new Set(inputString)].join("");
+
+            document.getElementById("result").innerText = `Unique Characters: ${uniqueCharacters}`;
+        }
+    </script>
+</body>
+</html>
