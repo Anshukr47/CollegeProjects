@@ -1,1 +1,1 @@
-# CollgeProjects
+# CollegeProjects
